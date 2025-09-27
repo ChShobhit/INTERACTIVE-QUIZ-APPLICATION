@@ -47,4 +47,10 @@ Self-Learning: Individuals can test their skills in a fun and interactive way.
 
 ✨ Conclusion
 
-The Interactive Quiz Application is more than just a test-taking tool. It represents the future of digital learning interfaces, where functionality meets design innovation. By combining glassmorphism, neon accents, and interactive elements, the application transforms assessments into an enjoyable and visually stimulating experience. With its futuristic holographic aesthetic, it not only engages learners but also redefines how online quizzes can look and feel.
+The Interactive Quiz Application is more than just a test-taking tool. It represents the future of digital learning interfaces, where functionality meets design innovation. By combining glassmorphism, neon accents, and interactive elements, the application transforms assessments into an enjoyable and visually stimulating
+experience. With its futuristic holographic aesthetic, it not only engages learners but also redefines how online quizzes can look and feel.
+
+
+OUTPUT:
+
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/c8b19426-3cc5-4c63-8e9f-8c383a2be444" />
