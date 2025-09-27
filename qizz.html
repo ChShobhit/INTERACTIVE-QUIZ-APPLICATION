@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Aesthetic Quiz — Interactive Quiz App</title>
+
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="theme-pastel">
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">
+        <h1>BrightQuiz</h1>
+        <p class="subtitle">INTERACTIVE QUIZ</p>
+      </div>
+
+      
+    </div>
+  </header>
+
+  <main class="container main-area">
+    <section id="quiz-card" class="card">
+      <!-- intro -->
+      <div id="intro" class="center">
+        <h2>Ready to test your knowledge?</h2>
+        <p class="muted">Tap Start to begin. Questions are timed — answer before the timer runs out!</p>
+        <div class="controls-row">
+          <button id="start-btn" class="btn primary">Start Quiz</button>
+          <button id="view-scores" class="btn secondary">View History</button>
+        </div>
+      </div>
+
+      <!-- quiz -->
+      <div id="quiz" class="hide">
+        <div class="quiz-header">
+          <div class="q-left">
+            <div id="q-count" class="chip">1 / 5</div>
+            <h3 id="question" class="question">Question text</h3>
+          </div>
+          <div class="q-right">
+            <div id="timer" class="timer" aria-live="polite">20s</div>
+          </div>
+        </div>
+
+        <div id="answers" class="answers"></div>
+
+        <div class="footer-row">
+          <div id="progress" class="progress" aria-hidden="false">
+            <div id="progress-bar" class="progress-bar"></div>
+          </div>
+
+          <div class="controls-row">
+            <button id="next-btn" class="btn ghost hide">Next</button>
+            <button id="finish-btn" class="btn ghost hide">Finish</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- result -->
+      <div id="result" class="hide center">
+        <h2>Well done! 🎉</h2>
+        <p id="result-text" class="muted">You scored X of Y</p>
+        <div class="controls-row">
+          <button id="restart-btn" class="btn primary">Play Again</button>
+          <button id="export-btn" class="btn secondary">Export Results</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- history modal (simple pane) -->
+    <aside id="history-pane" class="card hide">
+      <div class="pane-header">
+        <h3>Score History</h3>
+        <button id="close-history" class="small-btn">Close</button>
+      </div>
+      <div id="history-list" class="history-list"></div>
+      <div class="pane-footer">
+        <button id="clear-history" class="btn ghost">Clear History</button>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small> Works offline</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
